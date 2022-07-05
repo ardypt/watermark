@@ -15,9 +15,13 @@ import javax.imageio.ImageIO;
 public class WaterMarkText {
 
 	public static void main(String[] args) {
+		// the main image to be watermarked
 		File sourceImageFile = new File("C:/Users/developer7/Pictures/discover event/Discover event 2.png");
+		
+		// a folder that stores images that have been watermarked
 		File destImageFile = new File("C:/Users/developer7/Pictures/watermark/resultWatermarkText.png");
-
+		
+		// call function
 		addTextWatermark("CollarBear", sourceImageFile, destImageFile);
 	}
 

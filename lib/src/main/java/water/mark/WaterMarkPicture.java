@@ -12,10 +12,14 @@ import javax.imageio.ImageIO;
 public class WaterMarkPicture {
 	
 	public static void main(String[] args) {
+		// the main image to be watermarked
 		File sourceImageFile = new File("C:/Users/developer7/Pictures/discover event/Discover event 2.png");
+		// watermark image
+		File watermarkImageFile = new File("C:/Users/developer7/Pictures/Rolas.jpg");
+		// a folder that stores images that have been watermarked
 		File destImageFile = new File("C:/Users/developer7/Pictures/watermark/resultWatermarkImage.png");
 		
-		File watermarkImageFile = new File("C:/Users/developer7/Pictures/Rolas.jpg");
+		// call function
 		addImageWatermark(watermarkImageFile, sourceImageFile, destImageFile);
 	}
 	
